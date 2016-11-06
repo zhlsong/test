@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+    <script type="text/javascript" src="Scripts/angular.min.js"></script>
+    <script>
+        var myAppModule = angular.module('myApp', []);
+        myAppModule.filter('greet', function () {
+            return function (name) {
+                return 'Hello, ' + name + '!';
+            };
+        });
+    </script>
+</head>
+<body>
+    <div>
+        {{'world'|greet}}
+    </div>
+</body>
+</html>
