@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <header style="height:100px"><h1>header</h1></header>
+    <div> adsfsadf </div>
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+    <svg height="190">
+        <polygon points="100,10,40,180,190,60,10,60,160,180"
+                 style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd"></polygon>
+    </svg>
+    <input placeholder="placeholder" id="input1" width="100" />
+    <video width="420" id="video1" controls>
+        
+    </video>
+    <form action="demo-form.php" method="get">
+        First name: <input type="text" name="fname"><br>
+        Last name: <input type="text" name="lname"><br>
+        Enter a date before 1980-01-01:
+        <input type="date" name="bday" max="1979-12-31">
+
+        Enter a date after 2000-01-01:
+        <input type="date" name="bday" min="2000-01-02">
+
+        Quantity (between 1 and 5):
+        <input type="number" name="quantity" min="1" max="5">
+
+        <input type="submit" value="提交" >
+        <input type="submit" formmethod="post" formaction="demo-post.php"
+               value="使用 POST 提交">
+    </form>
+    <footer style="height:100px"><h1>footer</h1></footer>
+
+    <script>
+        var c = document.getElementById("myCanvas");
+        
+var ctx=c.getContext("2d");
+ctx.fillStyle="#FF0000";
+ctx.fillRect(0, 0, 150, 75);
+        ctx.
+    </script>
+</body>
+</html>
